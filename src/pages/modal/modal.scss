@@ -1,0 +1,48 @@
+page-modal {
+ion-content { width: 100%;
+.categories {
+    
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+
+}
+.categories > div {
+
+    flex-basis: 31%;
+    height: 21vh;
+    margin-left: 0.5%;
+ //border: 1px solid red;
+
+    img {
+        width: 80%;
+       // border: 1px solid green;
+        //margin-left: 10%;
+    }
+}
+     ion-card {
+      //   border: 1px solid gold;
+         flex-basis: 32% ;
+         margin-left: 10px;
+     }
+.card-title {
+   // border: 1px solid blue;
+    margin-top: 6%;
+    max-width: 100%;
+    padding: 3% 5%;
+    text-align: center;
+  
+    width: auto;
+    margin: 0;
+ h3 {
+     font-size: 14px;
+    font-weight: bold;
+    color: darkgray;
+    padding: 2%;
+}
+
+}
+}
+}
+
+

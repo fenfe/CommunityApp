@@ -1,17 +1,63 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<ion-content>
+
+ 
+  <div class="container">
+    <div class="top-images">
+      <!-- new -->
+      <div class="pics">
+
+        <div class="half1">
+        <div class="one" id="pic1"></div>
+        <div class="one" id="pic2" ></div>
+        <div class="one" id="pic3" ></div>
+        </div>
+
+        <div class="half2">
+        <div class="one" id="pic4"></div>
+        <div class="one" id="pic5"></div>
+        <div class="one" id="pic6"></div>
+      </div>
+
+    </div>
+
+    <div class="logo">
+      <div class="h">
+         <h1>Healthy<span id="span">Communities</span> </h1>
+      </div>
+     <div class="p">
+         <p>New York</p>
+     </div>
+    </div>
+      
+      <input id="overlapping" type="text" placeholder="Search here..."  ><ion-icon name="search" style="position:absolute; right: 10%; top: 96%; font-weight: bold; color: dodgerblue;"></ion-icon>
+        
+
+    </div> 
+<div class="other-half">
+    
+  <!-- new content -->
+<div class="categories">
+    <div *ngFor="let n of Data;let x = index"  (click)="viewContent(x)" >
+      
+       <img src="{{n.icon}}">
+       <div class="card-title" >
+         
+        <h3 style = "background:none;background-color: transparent">{{n.titleName}}</h3>
+       </div>
+       
+    </div>
+  </div>
+   
+ 
+    <button tappable id="fifi" (click)="modalShow()"><ion-icon name="arrow-dropdown" style="font-weight: bold; color: gray;"></ion-icon> Show More Services</button> 
+    </div>
+
+
+    
+ 
+</div>
+
+
 </ion-content>
